@@ -1,1 +1,4 @@
-# airflow-Spark
+# Dynamic GCS-Triggered PySpark Processing with Airflow
+
+### Description
+This project implements an Apache Airflow pipeline that automates the processing of daily customer data stored in Google Cloud Storage (GCS). When triggered the pipeline first takes input the date to pick the right file to process (the date can be either passed explicitly as a parameter or defaulting to the DAG’s logical date). It then uses a GCS file sensor to detect the arrival of the corresponding file. (people_<yyyymmdd>.csv). Once the file is available, the workflow triggers a PySpark job on an existing Dataproc cluster to filter and transform the data, splitting it into male and female datasets and storing the results back into GCS. This pipeline ensures that data processing is both event-driven and parameterized, enabling flexible backfills and robust daily automation.
