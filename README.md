@@ -59,5 +59,17 @@ After the job has finished succesfully when we look at our gcp bucket we will se
 
 ![Output Pic](pics/output_hier.png)
 
+If we download and open the files. In the female file we see all Sex as Female
+
+![Female Pic](pics/female.png)
+
+In the male file we se all Sex as Male
+
+![male Pic](pics/male.png)
+
+This was a small project to practise my **PysparkJob Orchestration** for **Data Engineering**.
+
+If you want to see the full video of the code working click here -> [LinkedIn]()
+
 
 
